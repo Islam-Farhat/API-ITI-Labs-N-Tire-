@@ -1,0 +1,28 @@
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\bin\Debug\net7.0\Ticket.DAL.deps.json
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\bin\Debug\net7.0\Ticket.DAL.runtimeconfig.json
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\bin\Debug\net7.0\Ticket.DAL.dll
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\bin\Debug\net7.0\Ticket.DAL.pdb
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.csproj.AssemblyReference.cache
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.AssemblyInfoInputs.cache
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.AssemblyInfo.cs
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.csproj.CoreCompileInputs.cache
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.dll
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\obj\Debug\net7.0\refint\Ticket.DAL.dll
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.pdb
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.genruntimeconfig.cache
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.DAL\obj\Debug\net7.0\ref\Ticket.DAL.dll
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\bin\Debug\net7.0\Ticket.DAL.deps.json
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\bin\Debug\net7.0\Ticket.DAL.runtimeconfig.json
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\bin\Debug\net7.0\Ticket.DAL.dll
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\bin\Debug\net7.0\Ticket.DAL.pdb
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.csproj.AssemblyReference.cache
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.AssemblyInfoInputs.cache
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.AssemblyInfo.cs
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.csproj.CoreCompileInputs.cache
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.dll
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\obj\Debug\net7.0\refint\Ticket.DAL.dll
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.pdb
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\obj\Debug\net7.0\Ticket.DAL.genruntimeconfig.cache
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.DAL\obj\Debug\net7.0\ref\Ticket.DAL.dll

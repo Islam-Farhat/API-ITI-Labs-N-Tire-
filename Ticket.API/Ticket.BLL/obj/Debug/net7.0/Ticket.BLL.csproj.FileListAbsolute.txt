@@ -1,0 +1,30 @@
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\bin\Debug\net7.0\Ticket.BLL.deps.json
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\bin\Debug\net7.0\Ticket.BLL.dll
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\bin\Debug\net7.0\Ticket.BLL.pdb
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\bin\Debug\net7.0\Ticket.DAL.dll
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\bin\Debug\net7.0\Ticket.DAL.pdb
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.csproj.AssemblyReference.cache
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.AssemblyInfoInputs.cache
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.AssemblyInfo.cs
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.csproj.CoreCompileInputs.cache
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.csproj.CopyComplete
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.dll
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\obj\Debug\net7.0\refint\Ticket.BLL.dll
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.pdb
+E:\ITI-9-Months\32-Web API\Day2\Ticket.API\Ticket.BLL\obj\Debug\net7.0\ref\Ticket.BLL.dll
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\bin\Debug\net7.0\Ticket.BLL.deps.json
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\bin\Debug\net7.0\Ticket.BLL.dll
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\bin\Debug\net7.0\Ticket.BLL.pdb
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\bin\Debug\net7.0\Ticket.DAL.dll
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\bin\Debug\net7.0\Ticket.DAL.pdb
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.csproj.AssemblyReference.cache
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.AssemblyInfoInputs.cache
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.AssemblyInfo.cs
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.csproj.CoreCompileInputs.cache
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.csproj.CopyComplete
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.dll
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\obj\Debug\net7.0\refint\Ticket.BLL.dll
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\obj\Debug\net7.0\Ticket.BLL.pdb
+C:\Users\eslam\Desktop\API-ITI-Labs-N-Tire-\Ticket.API\Ticket.BLL\obj\Debug\net7.0\ref\Ticket.BLL.dll
