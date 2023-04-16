@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Ticket.BLL;
+using Ticket.BLL.Dtos.Tickets;
 using Ticket.DAL;
 
 namespace Ticket.API.Controllers
@@ -35,7 +36,7 @@ namespace Ticket.API.Controllers
 
         #region Add
         [HttpPost]
-        public ActionResult Add(DAL.Ticket entity)
+        public ActionResult Add(AddTicketDto entity)
         {
             bool result = ticketManager.Add(entity);
             if (result)
@@ -47,7 +48,7 @@ namespace Ticket.API.Controllers
 
         #region Update
         [HttpPut]
-        public ActionResult Update(DAL.Ticket entity)
+        public ActionResult Update(UpdateAndDeleteDto entity)
         {
             bool result = ticketManager.Update(entity);
             if (result)
@@ -59,7 +60,7 @@ namespace Ticket.API.Controllers
 
         #region Delete
         [HttpDelete]
-        public ActionResult Delete(DAL.Ticket entity)
+        public ActionResult Delete(UpdateAndDeleteDto entity)
         {
             bool result = ticketManager.Delete(entity);
             if (result)

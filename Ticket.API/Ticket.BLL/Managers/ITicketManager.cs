@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ticket.BLL.Dtos.Tickets;
 using Ticket.DAL;
 
 namespace Ticket.BLL
@@ -11,9 +12,9 @@ namespace Ticket.BLL
     {
         IEnumerable<TicketDto> GetAll();
         DAL.Ticket? GetById(int id);
-        bool Add(DAL.Ticket ticket);
-        bool Update(DAL.Ticket entity);
-        bool Delete(DAL.Ticket entity);
+        bool Add(AddTicketDto ticket);
+        bool Update(UpdateAndDeleteDto entity);
+        bool Delete(UpdateAndDeleteDto entity);
         //void SaveChanges();
 
     }

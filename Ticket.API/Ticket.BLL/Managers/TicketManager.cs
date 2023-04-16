@@ -4,6 +4,7 @@ using System.Linq;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
+using Ticket.BLL.Dtos.Tickets;
 using Ticket.DAL;
 
 namespace Ticket.BLL
@@ -20,7 +21,7 @@ namespace Ticket.BLL
 
         public IEnumerable<TicketDto> GetAll()
         {
-            IEnumerable<Ticket.DAL.Ticket> TicketFromDb = ticketRepository.GetAll();
+            IEnumerable<DAL.Ticket> TicketFromDb = ticketRepository.GetAll();
             return TicketFromDb.Select(x => new TicketDto
             {
                 Id = x.Id,
@@ -32,12 +33,17 @@ namespace Ticket.BLL
 
         public DAL.Ticket? GetById(int id)
         {
-            return ticketRepository.GetById(id);
+            return  ticketRepository.GetById(id);
+            
         }
        
-        public bool Add(DAL.Ticket ticket)
+        public bool Add(AddTicketDto ticketDto)
         {
-            
+            var ticket = new DAL.Ticket();
+            ticket.Title = ticketDto.Title;
+            ticket.Description = ticketDto.Description;
+            ticket.DepartmentId = ticketDto.DepartmentId;
+
             try
             {
                 ticketRepository.Add(ticket);
@@ -50,11 +56,17 @@ namespace Ticket.BLL
             }
         }
 
-        public bool Update(DAL.Ticket entity)
+        public bool Update(UpdateAndDeleteDto ticketDto)
         {
+            var ticket = new DAL.Ticket();
+            ticket.Id = ticketDto.Id;
+            ticket.Title = ticketDto.Title;
+            ticket.Description = ticketDto.Description;
+            ticket.DepartmentId = ticketDto.DepartmentId;
+
             try
             {
-                ticketRepository.Update(entity);
+                ticketRepository.Update(ticket);
                 ticketRepository.SaveChanges();
                 return true;
             }
@@ -64,12 +76,17 @@ namespace Ticket.BLL
             }
         }
        
-        public bool Delete(DAL.Ticket entity)
+        public bool Delete(UpdateAndDeleteDto ticketDto)
         {
-            
+            var ticket = new DAL.Ticket();
+            ticket.Id = ticketDto.Id;
+            ticket.Title = ticketDto.Title;
+            ticket.Description = ticketDto.Description;
+            ticket.DepartmentId = ticketDto.DepartmentId;
+
             try
             {
-                ticketRepository?.Delete(entity);
+                ticketRepository?.Delete(ticket);
                 ticketRepository?.SaveChanges();
                 return true;
             }
