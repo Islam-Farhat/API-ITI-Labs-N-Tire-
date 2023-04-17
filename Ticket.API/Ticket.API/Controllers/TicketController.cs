@@ -41,7 +41,7 @@ namespace Ticket.API.Controllers
             bool result = ticketManager.Add(entity);
             if (result)
                 return Ok();
-            else
+
                 return BadRequest();
         }
         #endregion
