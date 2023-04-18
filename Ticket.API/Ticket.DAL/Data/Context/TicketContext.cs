@@ -21,6 +21,7 @@ namespace Ticket.DAL
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Set data when creating Database
             #region Seeding 
 
             #region Seeding Department
