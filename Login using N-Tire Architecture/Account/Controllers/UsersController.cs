@@ -27,7 +27,7 @@ namespace Account.Controllers
         [Route("RegisterUser")]
         public async Task<ActionResult> RegitserUser(RegisterDto register)
         {
-            bool result = await userManager.RegisterUser(register);
+            bool result = await userManager.Register(register,"User");
 
             //i want to show the errors
             if (result == false)
@@ -41,7 +41,7 @@ namespace Account.Controllers
         [Route("RegisterAdmin")]
         public async Task<ActionResult> RegisterAdmin(RegisterDto register)
         {
-            bool result = await userManager.RegisterAdmin(register);
+            bool result = await userManager.Register(register, "Admin");
 
             //i want to show the errors
             if (result == false)

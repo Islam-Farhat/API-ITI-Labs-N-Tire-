@@ -20,7 +20,7 @@ namespace Account.BL.Manager
             this.userManager = userManager;
             this.configuration = configuration;
         }
-        public async Task<bool> RegisterUser(RegisterDto register)
+        public async Task<bool> Register(RegisterDto register,string role)
         {
             var applicationUser = new ApplicationUser()
             {
@@ -40,42 +40,13 @@ namespace Account.BL.Manager
                     new Claim(ClaimTypes.NameIdentifier,applicationUser.Id),//id created userManager.CreateAsync in this step
                     new Claim(ClaimTypes.Name,applicationUser.UserName),
                     new Claim(ClaimTypes.Email,applicationUser.Email),
-                    new Claim(ClaimTypes.Role,"User"),
+                    new Claim(ClaimTypes.Role,role),
                 };
 
             await userManager.AddClaimsAsync(applicationUser, claims);
 
             return true;
         }
-
-        public async Task<bool> RegisterAdmin(RegisterDto register)
-        {
-            var applicationUser = new ApplicationUser()
-            {
-                UserName = register.UserName,
-                Email = register.Email,
-                Address = register.Address,
-                BirthDate = register.BirthDate,
-            };
-            var result = await userManager.CreateAsync(applicationUser, register.Password);
-            if (!result.Succeeded)
-            {
-                return false;
-            }
-
-            var claims = new List<Claim>()
-                {
-                    new Claim(ClaimTypes.NameIdentifier,applicationUser.Id),//id created userManager.CreateAsync in this step
-                    new Claim(ClaimTypes.Name,applicationUser.UserName),
-                    new Claim(ClaimTypes.Email,applicationUser.Email),
-                    new Claim(ClaimTypes.Role,"Admin"),
-                };
-
-            await userManager.AddClaimsAsync(applicationUser, claims);
-
-            return true;
-        }
-
         public async Task<TokenDto> Login(LoginDto login)
         {
             var user = await userManager.FindByNameAsync(login.UserName);
