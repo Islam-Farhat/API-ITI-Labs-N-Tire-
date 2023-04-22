@@ -5,8 +5,6 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using System.Configuration;
-using static Account.BL.Dtos;
 
 namespace Account.BL.Manager
 {
@@ -20,7 +18,7 @@ namespace Account.BL.Manager
             this.userManager = userManager;
             this.configuration = configuration;
         }
-        public async Task<bool> Register(RegisterDto register,string role)
+        public async Task<RegisterResultDto> Register(RegisterDto register,string role)
         {
             var applicationUser = new ApplicationUser()
             {
@@ -32,7 +30,10 @@ namespace Account.BL.Manager
             var result = await userManager.CreateAsync(applicationUser, register.Password);
             if (!result.Succeeded)
             {
-                return false;
+                List<IdentityError> errorList = result.Errors.ToList();
+                var errors = string.Join(", ", errorList.Select(e => e.Description));
+
+                return new RegisterResultDto(false, errors);
             }
 
             var claims = new List<Claim>()
@@ -45,25 +46,24 @@ namespace Account.BL.Manager
 
             await userManager.AddClaimsAsync(applicationUser, claims);
 
-            return true;
+            return new RegisterResultDto(true, null);
         }
-        public async Task<TokenDto> Login(LoginDto login)
+        public async Task<LoginResultDto> Login(LoginDto login)
         {
             var user = await userManager.FindByNameAsync(login.UserName);
             if (user == null)
             {
-                return new TokenDto("erorr");
+                return new LoginResultDto(false,Errors:"Wrong UserName or Password",null);
             }
             var isauthenticated = await userManager.CheckPasswordAsync(user, login.Password);
             if (!isauthenticated)
             {
-                return new TokenDto("erorr");
+                return new LoginResultDto(false, Errors: "Wrong UserName or Password", null);
             }
             var claims = await userManager.GetClaimsAsync(user);
 
             #region SecretKey
-            //var secretkeystring = configuration.GetValue<string>("SecretKey");
-            var secretkeystring = "mykeyhgcgfdgfdfjdfujfyjd";
+            var secretkeystring = configuration.GetSection("SecretKey").Value!.ToString();
             var scretkeyinbyets = Encoding.ASCII.GetBytes(secretkeystring!);
             var secretkey = new SymmetricSecurityKey(scretkeyinbyets);
             #endregion
@@ -92,7 +92,7 @@ namespace Account.BL.Manager
 
             #endregion
 
-            return new TokenDto(tokenstring);
+            return new LoginResultDto(true, null, tokenstring);
         }
     }
 }

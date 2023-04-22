@@ -1,15 +1,14 @@
 ﻿namespace Account.BL
 {
-    public class Dtos
-    {
-        public record LoginDto(string UserName, string Password);
-        public record RegisterDto(
-            string Address,
-            string Email,
-            DateTime BirthDate,
-            string UserName,
-            string Password);
+    public record LoginDto(string UserName, string Password);
+    public record RegisterDto(
+        string Address,
+        string Email,
+        DateTime BirthDate,
+        string UserName,
+        string Password);
 
-        public record TokenDto(string token);
-    }
+    public record RegisterResultDto(bool IsSuccesfull, string? Errors);
+    public record LoginResultDto(bool IsSuccesfull, string? Errors, string? Token);
+
 }

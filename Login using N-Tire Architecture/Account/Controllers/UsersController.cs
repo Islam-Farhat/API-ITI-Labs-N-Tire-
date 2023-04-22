@@ -8,8 +8,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using static Account.BL.Dtos;
-
 namespace Account.Controllers
 {
     [Route("api/[controller]")]
@@ -27,12 +25,11 @@ namespace Account.Controllers
         [Route("RegisterUser")]
         public async Task<ActionResult> RegitserUser(RegisterDto register)
         {
-            bool result = await userManager.Register(register,"User");
+            var result = await userManager.Register(register,"User");
 
-            //i want to show the errors
-            if (result == false)
+            if (result.IsSuccesfull == false)
             {
-                return BadRequest("Invalid Email or UserName!");
+                return BadRequest(result.Errors);
             }
             return Ok();
         }
@@ -41,26 +38,25 @@ namespace Account.Controllers
         [Route("RegisterAdmin")]
         public async Task<ActionResult> RegisterAdmin(RegisterDto register)
         {
-            bool result = await userManager.Register(register, "Admin");
+            var result = await userManager.Register(register, "Admin");
 
-            //i want to show the errors
-            if (result == false)
+            if (result.IsSuccesfull == false)
             {
-                return BadRequest("Invalid Email or UserName!");
+                return BadRequest(result.Errors);
             }
             return Ok();
         }
 
         [HttpPost]
         [Route("LoginAdminOrUser")]
-        public async Task<ActionResult<TokenDto>> LoginAdminOrUser(LoginDto login)
+        public async Task<ActionResult<LoginResultDto>> LoginAdminOrUser(LoginDto login)
         {
             var result = await userManager.Login(login);
-            if (result.token == "erorr")
+            if (!result.IsSuccesfull)
             {
-                return Unauthorized("Wrong Username or password");
+                return Unauthorized(result.Errors);
             }
-            return Ok(result.token);
+            return Ok(result.Token);
         }
 
     }
