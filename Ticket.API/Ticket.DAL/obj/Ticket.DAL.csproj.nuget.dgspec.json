@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eslam\\Desktop\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.DAL\\Ticket.DAL.csproj": {}
+    "E:\\ITI-9-Months\\32-Web API\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.DAL\\Ticket.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eslam\\Desktop\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.DAL\\Ticket.DAL.csproj": {
+    "E:\\ITI-9-Months\\32-Web API\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.DAL\\Ticket.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eslam\\Desktop\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.DAL\\Ticket.DAL.csproj",
+        "projectUniqueName": "E:\\ITI-9-Months\\32-Web API\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.DAL\\Ticket.DAL.csproj",
         "projectName": "Ticket.DAL",
-        "projectPath": "C:\\Users\\eslam\\Desktop\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.DAL\\Ticket.DAL.csproj",
+        "projectPath": "E:\\ITI-9-Months\\32-Web API\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.DAL\\Ticket.DAL.csproj",
         "packagesPath": "C:\\Users\\eslam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eslam\\Desktop\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.DAL\\obj\\",
+        "outputPath": "E:\\ITI-9-Months\\32-Web API\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eslam\\AppData\\Roaming\\NuGet\\NuGet.Config",

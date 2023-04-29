@@ -12,6 +12,22 @@ namespace Ticket.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            #region Cors
+
+            var allowAllPolicy = "AlloAll";
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(allowAllPolicy, policy =>
+                {
+                    policy.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                });
+            });
+
+            #endregion
+
+
             // Add services to the container.
 
             builder.Services.AddControllers();

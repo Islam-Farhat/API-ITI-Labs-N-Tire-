@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZxPBBJcDeF9b0sx5F3YEVXbAAVJsuv/hZoJc85ZEL/WhRtvsroq3I+MOKTfOcdCtvZmG2wS8Wk2thI3j0H2yjQ==",
+  "dgSpecHash": "IZHokOElqq1kg62NY3IYuKA+zHzm64XJ+V5GC8IIkPsT7IhHQRpgwf2SspkCToqQ/wy7ggYmtbPUnKpq0eRewg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\eslam\\Desktop\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.BLL\\Ticket.BLL.csproj",
+  "projectFilePath": "E:\\ITI-9-Months\\32-Web API\\API-ITI-Labs-N-Tire-\\Ticket.API\\Ticket.BLL\\Ticket.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eslam\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\eslam\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
